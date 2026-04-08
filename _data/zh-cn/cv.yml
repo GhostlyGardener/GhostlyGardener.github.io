@@ -1,0 +1,66 @@
+- title: 基本信息
+  type: map
+  contents:
+    - name: 姓名
+      value: 阿尔伯特·爱因斯坦
+    - name: 出生日期
+      value: 1879年3月14日
+    - name: 语言
+      value: 英语，德语
+
+- title: 教育经历
+  type: time_table
+  contents:
+    - title: 博士
+      institution: 苏黎世大学（瑞士）
+      year: 1905
+      description:
+        - 描述1
+        - 描述2
+
+    - title: 教师资格文凭
+      institution: 苏黎世联邦理工学院
+      year: 1900
+
+- title: 工作经历
+  type: time_table
+  contents:
+    - title: 理论物理教授
+      institution: 普林斯顿高等研究院
+      year: 1933 - 1955
+
+    - title: 访问教授
+      institution: 加州理工学院
+      year: 1933
+
+    - title: 所长
+      institution: 柏林威廉皇帝物理研究所
+      year: 1917 - 1933
+
+- title: 开源项目
+  type: time_table
+  contents:
+    - title: multi-language-al-folio
+      year: 2023 - 至今
+      description: 支持多语言的学术网站主题
+
+- title: 奖项与荣誉
+  type: time_table
+  contents:
+    - year: 1921
+      items:
+        - 诺贝尔物理学奖
+        - 马泰乌奇奖章
+
+- title: 学术兴趣
+  type: nested_list
+  contents:
+    - title: 研究方向1
+      items:
+        - 描述1
+        - 描述2
+
+- title: 其他兴趣
+  type: list
+  contents:
+    - <u>爱好：</u> 阅读、音乐等
