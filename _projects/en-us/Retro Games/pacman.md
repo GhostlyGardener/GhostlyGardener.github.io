@@ -1,17 +1,22 @@
 ---
 layout: page
 title: Pac-Man
-description: Maze navigation, basic enemy AI, and state-machine driven gameplay
+description: Clear the maze, eat every pellet, and stay ahead of the four ghosts chasing you.
 img: assets/img/games/pacman_preview.png
 importance: 5
 category: Retro Games
 ---
 
-<a href="../../games/pacman.html" target="_blank">PLAY FULLSCREEN HERE</a>
+<b>Overview</b><br/>
+An arcade-style Pac-Man prototype featuring maze navigation, enemy AI, and state-based behavior.<br/><br/>
 
-A Pac-Man-inspired arcade prototype focused on enemy AI, state transitions, and movement through a tile-based maze.<br/><br/>
+---
 
 <b>Controls</b><br/>
 WASD to move
+
+---
+
+<a href="../../games/pacman.html" target="_blank">Play fullscreen here</a>
 
 <embed type="text/html" src="../../games/pacman.html" width="60%" height="550">

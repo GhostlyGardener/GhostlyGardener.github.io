@@ -2,13 +2,13 @@
 layout: about
 title: 关于
 permalink: /
-subtitle: 计算机科学 & 游戏开发 | 南加州大学 | thyoumu8848@gmail.com
+subtitle: thyoumu8848@gmail.com
 
 profile:
   align: right
   image: portrait.jpg
   image_circular: false # crops the image to make it circular
-  more_info: 
+  more_info: 魂魄妖梦
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -21,4 +21,4 @@ social: false # includes social icons at the bottom of the page
 
 目前就读于南加州大学维特比工程学院，主修计算机科学，方向为游戏开发。
 
-平时接触和游玩过许多不同类型的游戏，尤其喜爱沉浸感强、机制优秀，或者艺术风格特别的游戏。一些喜欢的作品有《黑暗之魂》《群星》《东方风神录》。
+平时接触和游玩过许多不同类型的游戏，尤其喜爱沉浸感强、机制出色，或者艺术风格鲜明的游戏。一些喜欢的作品有《黑暗之魂》《群星》《东方风神录》。

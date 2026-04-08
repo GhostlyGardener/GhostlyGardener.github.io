@@ -18,6 +18,10 @@ horizontal: false
     <h2 class="category">{{ category }}</h2>
   </a>
   {% if category == "复古游戏" %}
+  <div>
+    这些经典游戏是采用 C++ 和 SDL3 库进行的重制。<br/>
+  </div>
+  <br/>
   <!-- -->
   {% endif %}
   {% assign categorized_projects = site.projects | where: "category", category %}

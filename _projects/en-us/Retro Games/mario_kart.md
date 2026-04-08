@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mario Kart
-description: Vehicle movement, terrain response, spring camera, and 3D racing feel
+description: Take on colorful tracks, stay in control of your kart, and push for the fastest lap.
 img: assets/img/games/mario_kart_preview.png
 importance: 8
 category: Retro Games
@@ -9,7 +9,7 @@ category: Retro Games
 
 <a href="../../games/mario_kart.html" target="_blank">PLAY FULLSCREEN HERE</a>
 
-A small racing prototype exploring vehicle physics, height-map terrain, and camera behavior in a 3D environment.<br/><br/>
+A small 3D racing prototype featuring vehicle movement, terrain response, a smooth follow camera, and opponent AI.<br/><br/>
 
 <b>Controls</b><br/>
 WAD to drive

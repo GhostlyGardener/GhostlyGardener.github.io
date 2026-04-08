@@ -18,6 +18,10 @@ horizontal: false
     <h2 class="category">{{ category }}</h2>
   </a>
   {% if category == "Retro Games" %}
+  <div>
+      These classic titles were remade from scratch using C++ and SDL3 library.<br/>
+  </div>
+  <br/>
   <!-- -->
   {% endif %}
   {% assign categorized_projects = site.projects | where: "category", category %}

@@ -1,18 +1,23 @@
 ---
 layout: page
 title: Mario
-description: Side-scrolling movement, AABB collision, and platforming game feel
+description: Run, jump, and make your way past enemies and obstacles to reach the end of the level.
 img: assets/img/games/mario_preview.png
 importance: 4
 category: Retro Games
 ---
 
-<a href="../../games/mario.html" target="_blank">PLAY FULLSCREEN HERE</a>
+<b>Overview</b><br/>
+A side-scrolling platformer prototype featuring character movement, collision detection, level scrolling, and basic jump feedback.<br/><br/>
 
-A side-scrolling platformer prototype centered on movement, collision, level scrolling, and basic audiovisual feedback.<br/><br/>
+---
 
 <b>Controls</b><br/>
 A / D to move<br/>
 Space to jump
+
+---
+
+<a href="../../games/mario.html" target="_blank">Play fullscreen here</a>
 
 <embed type="text/html" src="../../games/mario.html" width="80%" height="500">

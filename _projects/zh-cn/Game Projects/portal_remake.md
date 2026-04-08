@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 《传送门》复刻
-description: 以《传送门》机制为核⼼的 3D 第⼀⼈称解谜游戏，聚焦于传送移动、空间思维与系统驱动的玩法设计。
+description: 以《传送门》机制为核心的 3D 第一人称解谜游戏，聚焦于传送移动、空间思维与系统驱动的玩法设计。
 
 img: assets/img/games/portal_preview.png
 importance: 1
@@ -16,7 +16,7 @@ category: 游戏项目
 <b>操作方式</b><br/>
 WASD 移动<br/>
 Space 跳跃<br/>
-鼠标左 / 右键发射传送门<br/>
+鼠标左键 / 右键发射传送门<br/>
 R 重置传送门<br/>
 F 跳过对话<br/>
 ESC 释放鼠标<br/>

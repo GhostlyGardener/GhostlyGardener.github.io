@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Zelda
-description: Tile maps, top-down movement, and A* pathfinding
+description: Freely explore a dense action-adventure map and interact with enemies and the surrounding environment in real time through attacks.
 img: assets/img/games/zelda_preview.png
 importance: 6
 category: Retro Games

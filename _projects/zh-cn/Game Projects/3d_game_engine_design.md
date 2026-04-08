@@ -1,14 +1,14 @@
 ---
 layout: page
 title: 3D 游戏引擎
-description: 一个基于 C++ 和 SDL3 实现的自研 3D 游戏引擎，用于探索实时渲染、动画系统与引擎架构。
+description: 一个基于 C++ 和 SDL3 实现的 3D 游戏引擎，用于探索实时渲染、动画系统与引擎架构。
 img: assets/img/engines/animation.gif
 importance: 2
 category: 游戏项目
 ---
 
 <b>项目概述</b><br/>
-该项目是一个基于 C++ 和 SDL3 开发的自定义 3D 游戏引擎。它作为一个技术平台，用于实现和测试渲染、动画、碰撞等核心系统。<br/><br/>
+该项目是一个基于 C++ 和 SDL3 开发的 3D 游戏引擎。<br/><br/>
 
 项目最初的目标是通过实践理解引擎层各个系统的协作方式，包括场景组织与管理、模型与纹理的加载与复用、着色器与光照对画面表现的影响，以及动画、碰撞和性能分析等系统对交互与运行时表现的支撑。<br/><br/>
 
@@ -92,15 +92,15 @@ category: 游戏项目
 <hr>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/engines/models.png" title="models img" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
         <center>
             <b>模型与资源管理</b><br/>
         </center>
         - 构建资源管理器，实现资源复用<br/>
         - 支持基于 JSON 的场景加载<br/>
         - 引入组件系统以支持灵活的对象行为扩展<br/>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/engines/models.png" title="models img" %}
     </div>
 </div>
 

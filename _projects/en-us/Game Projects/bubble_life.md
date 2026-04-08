@@ -21,7 +21,7 @@ This game is played entirely with the mouse.<br/>
 
 <a href="../../games/bubble_life/index.html" target="_blank">PLAY FULLSCREEN HERE</a>
 
-<embed type="text/html" src="../../games/bubble_life/index.html" width="120%" height="630" style="transform: scale(1)">
+<embed type="text/html" src="../../games/bubble_life/index.html" width="101%" height="630" style="transform: scale(1)">
 
 ---
 
