@@ -1,0 +1,189 @@
+name:
+  personal_name: 半灵
+  middle_name:
+  family_name: 园丁
+archive:
+  prefix: 一个归档
+  category_suffix: 属于此分类
+  tag_suffix: 带有此标签
+  year_suffix: 来自这一年
+
+bibliography:
+  abstract: 摘要
+  awarded: 获奖
+  blog: 博客
+  book_prefix: 收录于
+  code: 代码
+  last_author_prefix: 和
+  poster: 海报
+  slides: 幻灯片
+  supp: 补充材料
+  video: 视频
+  website: 网站
+
+blog:
+  navigation_title: 博客
+
+categories:
+  fun: 娱乐
+  work: 工作
+
+citation:
+  bibtex: "或使用 BibTeX 引用："
+  introduction: "如果你觉得有用，请这样引用："
+
+collections:
+  books: 书籍
+  posts: 文章
+
+contact_note: 你可以添加一条说明，告诉别人最适合联系你的方式。
+
+cv:
+  address: 地址
+  area: 地区
+  awarder: 授予方
+  awards: 奖项
+  basics: 基本信息
+  certificates: 证书
+  city: 城市
+  countryCode: 国家代码
+  courses: 课程
+  date: 日期
+  education: 教育经历
+  email: 邮箱
+  endDate: 结束日期
+  fluency: 熟练程度
+  highlights: 亮点
+  image: 图片
+  institution: 学校/机构
+  interests: 兴趣
+  issuer: 颁发机构
+  keywords: 关键词
+  label: 标题
+  language: 语言
+  languages: 语言能力
+  level: 等级
+  location: 地址
+  name: 姓名
+  network: 平台
+  organization: 组织
+  phone: 电话
+  position: 职位
+  postalCode: 邮编
+  present: 至今
+  profiles: 社交账号
+  projects: 项目
+  publications: 出版物
+  publisher: 出版社
+  reference: 推荐人
+  references: 推荐
+  region: 地区
+  releaseDate: 发布日期
+  score: 分数
+  skills: 技能
+  startDate: 开始日期
+  studyType: 学位类型
+  summary: 简介
+  table_of_contents: 目录
+  title: 标题
+  url: 链接
+  username: 用户名
+  volunteer: 志愿经历
+  work: 工作经历
+
+footer:
+  copyright: 版权所有
+  last_updated: "最后更新："
+
+footer_text: >
+  基于 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 构建，
+  使用 <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a> 主题。
+  托管于 <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>。
+
+latest_posts: 最新文章
+
+months:
+  long:
+    january: 一月
+    february: 二月
+    march: 三月
+    april: 四月
+    may: 五月
+    june: 六月
+    july: 七月
+    august: 八月
+    september: 九月
+    october: 十月
+    november: 十一月
+    december: 十二月
+  short:
+    january: 1月
+    february: 2月
+    march: 3月
+    april: 4月
+    may: 5月
+    june: 6月
+    july: 7月
+    august: 8月
+    september: 9月
+    october: 10月
+    november: 11月
+    december: 12月
+
+news: 新闻
+
+newsletter:
+  back: 返回
+  error: "出错了，请重试"
+  subscribe: 订阅
+  subscribed: "订阅成功"
+  subscribe_to_receive: "订阅以获取最新文章通知："
+  too_many_signups: "请求过多，请稍后再试"
+  wait: "请稍候..."
+
+no_news: 暂无新闻...
+no_posts: 暂无文章...
+
+pagination:
+  page: 页
+
+post:
+  created_in: 发布于
+  created_by: 作者
+  last_updated: 最后更新于
+
+references: 参考文献
+
+related_posts:
+  description: "你可能还会喜欢以下文章："
+  title: 相关推荐
+
+search:
+  dark_theme:
+    description: 切换为深色模式
+    title: 深色模式
+  dropdown: 更多选项
+  email: 发送邮件
+  footer:
+    close: 关闭
+    navigate: 导航
+    parent: 返回上级
+    select: 选择
+  languages: 语言
+  light_theme:
+    description: 切换为浅色模式
+    title: 浅色模式
+  navigation: 导航菜单
+  news: 新闻
+  placeholder: 输入关键词搜索
+  posts: 文章
+  projects: 项目
+  socials: 社交
+  system_theme:
+    description: 跟随系统主题
+    title: 系统默认
+  theme: 主题
+
+selected_publications: 精选出版物
+
+site_description: 一个简洁的学术网站主题，基于 folio 设计。

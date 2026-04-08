@@ -1,0 +1,205 @@
+{
+  "basics": {
+    "name": "魂魄妖梦",
+    "image": "",
+    "email": "thyoumu8848@gmail.com",
+    "url": "https://GhostlyGardener.github.io",
+    "summary": "南加州大学计算机科学专业在读学生，喜欢探索互动媒体的技术实现与创意表达。",
+    "profiles": [
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "南加州大学",
+      "location": "美国加利福尼亚州洛杉矶",
+      "url": "https://www.cs.usc.edu/academic-programs/undergrad/computer-science-games/",
+      "area": "计算机科学（游戏方向）",
+      "studyType": "理学学士",
+      "startDate": "08-2023",
+      "endDate": "05-2027"
+    }
+  ],
+  "projects": [
+    {
+      "name": "《传送门》复刻",
+      "summary": "游戏程序 | C++, SDL3, RapidJSON, SDL_mixer",
+      "highlights": [
+        "使用 C++ 与 SDL3 开发一款以《传送门》机制为核心的 3D 第一人称解谜游戏，搭建游戏运行框架，实现对象生命周期管理、组件系统、输入处理、碰撞检测、场景更新循环及核心玩法。",
+        "基于线段投射、四元数与矩阵变换实现传送门放置与穿越，支持传送、镜头更新及动量重映射。",
+        "实现 JSON 驱动的关卡加载系统，支持从配置文件动态生成 Actor。",
+        "实现游戏内音频系统，支持多通道播放、音频缓存、对象绑定、距离衰减与声道抢占策略。"
+      ],
+      "startDate": "10-2025",
+      "endDate": "12-2025",
+      "url": "/zh-cn/projects/portal_remake/"
+    },
+    {
+      "name": "3D 游戏引擎实现",
+      "summary": "游戏引擎开发 | C++, SDL3, HLSL",
+      "highlights": [
+        "使用 C++ 与 SDL3 实现 3D 游戏引擎基础渲染功能，完成变换、相机与投影矩阵、深度缓冲、纹理渲染、材质系统及 Blinn-Phong 光照。",
+        "实现骨骼动画系统，支持关键帧插值与角色动画播放。",
+        "实现碰撞与调试模块，包含 AABB 相交测试、线段投射检测、单元测试和作用域性能分析工具。",
+        "扩展渲染管线，加入法线贴图、离屏渲染目标和 Bloom 后处理效果。"
+      ],
+      "startDate": "01-2026",
+      "endDate": "03-2026",
+      "url": "/zh-cn/projects/3d_game_engine_design/"
+    },
+    {
+      "name": "《夜不收》",
+      "summary": "游戏设计与开发 | C#, Unity",
+      "highlights": [
+        "以明朝边防预警体系为背景，设计并开发一款 2D 俯视角潜行游戏，玩家通过环境线索判断敌军动向并返回烽火台发出预警。",
+        "实现核心潜行系统，包括敌人巡逻、搜索、追逐状态，视野检测、最后位置搜索、NavMesh 追击以及玩家隐藏机制。",
+        "完成场景切换、动态相机边界更新，以及玩家位置与背包数据的存档与读档功能。"
+      ],
+      "startDate": "09-2025",
+      "endDate": "12-2025",
+      "url": "/zh-cn/projects/night_courier/"
+    },
+    {
+      "name": "《饮光之地》",
+      "summary": "音频设计与实现 | C#, Unity, Wwise",
+      "highlights": [
+        "在 2D 横版探索解谜游戏中负责音效设计、音乐创作及技术音频实现。",
+        "使用 Wwise 搭建动态环境音系统，实现基于距离的环境音区、交互音效及循环控制。",
+        "实现玩家音频系统，包括脚步、跳跃、滑翔、能力循环，并结合 RTPC 控制实现动态变化。"
+      ],
+      "startDate": "04-2025",
+      "endDate": "05-2025",
+      "url": "/zh-cn/projects/a_realm_that_drinks_light/"
+    }
+  ],
+  "awards": [
+    {
+      "title": "学术成就奖",
+      "date": "2025",
+      "awarder": "南加州大学"
+    }
+  ],
+  "involvement": [
+    {
+      "organization": "浙江东方Project音乐社",
+      "location": "浙江·杭州",
+      "position": "创始人",
+      "url": "",
+      "startDate": "08-2022",
+      "highlights": [
+        "建立了一个超过150人的社区，围绕东方Project及音乐展开交流与活动。",
+        "组织线上线下活动，包括乐队合奏、桌游以及音乐创作交流。",
+        "两年音乐理论与视唱练耳教学经验。"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "计算机科学",
+      "icon": "fa-solid fa-star",
+      "keywords": [
+        "C++ / C# / Python / Java",
+        "x86-64 汇编",
+        "版本控制",
+        "软件开发与迭代",
+        "机器学习"
+      ]
+    },
+    {
+      "name": "游戏开发",
+      "icon": "fa-solid fa-star",
+      "keywords": [
+        "Unity",
+        "Wwise 音频中间件",
+        "Unreal Engine",
+        "3D建模基础",
+        "原型开发"
+      ]
+    },
+    {
+      "name": "音乐",
+      "icon": "fa-solid fa-star",
+      "keywords": [
+        "古典吉他",
+        "作曲",
+        "制谱软件",
+        "数字音频工作站"
+      ]
+    },
+    {
+      "name": "其他",
+      "icon": "fa-solid fa-star",
+      "keywords": [
+        "沟通能力",
+        "问题解决",
+        "团队协作与领导力",
+        "时间管理"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "工作方向",
+      "icon": "fa-solid fa-star",
+      "keywords": [
+        "游戏开发",
+        "引擎开发",
+        "音频设计",
+        "音频编程",
+        "游戏设计"
+      ]
+    },
+    {
+      "name": "游戏",
+      "icon": "fa-solid fa-star",
+      "keywords": [
+        "黑暗之魂",
+        "群星",
+        "蔚蓝",
+        "植物大战僵尸",
+        "东方Project"
+      ]
+    },
+    {
+      "name": "音乐",
+      "icon": "fa-solid fa-star",
+      "keywords": [
+        "肖斯塔科维奇 第二钢琴三重奏",
+        "斯克里亚宾 钢琴协奏曲",
+        "皮亚佐拉 探戈的历史",
+        "八方旅人 原声带"
+      ]
+    },
+    {
+      "name": "其他",
+      "icon": "fa-solid fa-star",
+      "keywords": [
+        "旅行",
+        "摄影",
+        "阅读",
+        "教育"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "中文",
+      "fluency": "母语",
+      "icon": "fa-solid fa-star"
+    },
+    {
+      "language": "英语",
+      "fluency": "流利",
+      "icon": "fa-solid fa-star"
+    },
+    {
+      "language": "日语",
+      "fluency": "基础",
+      "icon": "fa-solid fa-star"
+    }
+  ]
+}
