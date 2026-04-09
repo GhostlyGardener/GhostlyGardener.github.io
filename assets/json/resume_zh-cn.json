@@ -16,7 +16,7 @@
   "education": [
     {
       "institution": "南加州大学",
-      "location": "美国加利福尼亚州洛杉矶",
+      "location": "加州 · 洛杉矶",
       "url": "https://www.cs.usc.edu/academic-programs/undergrad/computer-science-games/",
       "area": "计算机科学（游戏方向）",
       "studyType": "理学学士",
@@ -85,14 +85,14 @@
   ],
   "involvement": [
     {
-      "organization": "浙江东方Project音乐社",
-      "location": "浙江·杭州",
+      "organization": "浙江东方Project音乐集会",
+      "location": "浙江 · 杭州",
       "position": "创始人",
       "url": "",
       "startDate": "08-2022",
       "highlights": [
-        "建立了一个超过150人的社区，围绕东方Project及音乐展开交流与活动。",
-        "组织线上线下活动，包括乐队合奏、桌游以及音乐创作交流。",
+        "建立并运营一个约150人的本地社群，以东方Project及音乐为主题开展交流与活动。",
+        "组织线上线下活动，包括乐手合奏、桌游以及音乐创作交流。",
         "两年音乐理论与视唱练耳教学经验。"
       ]
     }
@@ -136,8 +136,8 @@
       "keywords": [
         "沟通能力",
         "问题解决",
-        "团队协作与领导力",
-        "时间管理"
+        "优先级管理",
+        "团队协作与领导力"
       ]
     }
   ],

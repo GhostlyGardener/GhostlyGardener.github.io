@@ -61,7 +61,7 @@ cv:
   keywords: 关键词
   label: 标题
   language: 语言
-  languages: 语言能力
+  languages: 语言
   level: 等级
   location: 地址
   name: 姓名
@@ -90,6 +90,7 @@ cv:
   username: 用户名
   volunteer: 志愿经历
   work: 工作经历
+  involvement: 社团
 
 footer:
   copyright: 版权所有
