@@ -83,6 +83,7 @@ cv:
   username: Username
   volunteer: Volunteer
   work: Work
+  involvement: Involvement
 footer:
   copyright: Copyright
   last_updated: "Last updated:"
