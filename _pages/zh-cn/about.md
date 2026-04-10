@@ -6,9 +6,9 @@ subtitle: thyoumu8848@gmail.com
 
 profile:
   align: right
-  image: portrait.jpg
+  image: bonfire.jpeg
   image_circular: false # crops the image to make it circular
-  more_info: 魂魄妖梦
+  more_info: 
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -22,3 +22,27 @@ social: false # includes social icons at the bottom of the page
 目前就读于南加州大学维特比工程学院，主修计算机科学，方向为游戏开发。
 
 平时接触和游玩过许多不同类型的游戏，尤其喜爱沉浸感强、机制出色，或者艺术风格鲜明的游戏。一些喜欢的作品有《黑暗之魂》《群星》《东方风神录》。
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = [
+      "/assets/img/bonfire.jpeg",
+      "/assets/img/demonSouls.jpg",
+      "/assets/img/Irithyll.jpg",
+      "/assets/img/Knight.jpg"
+    ];
+
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+
+    const img =
+      document.querySelector(".profile img") ||
+      document.querySelector("img[alt='profile image']") ||
+      document.querySelector(".post img");
+
+    if (img) {
+      img.src = randomImage;
+    } else {
+      console.log("没有找到头像图片元素");
+    }
+  });
+</script>
