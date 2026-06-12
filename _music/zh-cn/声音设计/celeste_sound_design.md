@@ -8,7 +8,7 @@ category: 声音设计
 ---
 
 <b>概述</b><br/>
-这是一个围绕 10 秒 Celeste 游戏片段做的音效设计练习。画面里的所有可听声音都被重新制作或替换，让整体更紧凑、更清晰，也更有触感。<br/><br/>
+这是一个围绕 10 秒 Celeste 游戏片段做的音效设计练习。<br/><br/>
 
 <b>视频</b><br/>
 <video controls preload="auto" playsinline width="100%" poster="/assets/img/projects/celeste_sound_design.png">
