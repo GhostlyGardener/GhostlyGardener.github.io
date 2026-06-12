@@ -8,7 +8,7 @@ category: Sound Design
 ---
 
 <b>Overview</b><br/>
-This is a short sound design exercise built around a 10-second Celeste gameplay clip. Every audible layer was remade or replaced to make the scene feel tighter, clearer, and more physical.<br/><br/>
+This is a short sound design exercise built around a 10-second Celeste gameplay clip.<br/><br/>
 
 <b>Video</b><br/>
 <video controls preload="auto" playsinline width="100%" poster="/assets/img/projects/celeste_sound_design.png">
