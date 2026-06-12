@@ -239,7 +239,9 @@ kbd {
 }
 
 .post article .profile {
-  width: min(38%, 360px);
+  display: inline-block;
+  width: auto;
+  max-width: min(38%, 360px);
   margin-top: 0.1rem;
   margin-bottom: 1.5rem;
 
@@ -247,19 +249,20 @@ kbd {
   picture {
     display: block;
     margin: 0;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     line-height: 0;
   }
 
   img {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
-    max-height: 520px;
     aspect-ratio: auto;
     border: 1px solid var(--global-divider-color);
     border-radius: var(--portfolio-radius) !important;
-    object-fit: initial;
+    object-fit: contain;
     box-shadow: 0 18px 48px var(--global-shadow-color);
   }
 
@@ -518,6 +521,7 @@ pre {
 
   .post article .profile {
     float: none !important;
+    display: block;
     width: 100%;
     max-width: none;
     margin: 0 0 1.6rem;
