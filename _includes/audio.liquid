@@ -1,20 +1,13 @@
-<figure>
+{% assign audio_src = include.path | relative_url | bust_file_cache %}
+{% assign audio_title = include.title | default: page.title %}
+
+<figure class="gg-audio-player">
   <audio
-    src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
-    {% if include.class %}
-      class="{{ include.class }}"
-    {% endif %}
-    {% if include.alt %}
-      alt="{{ include.alt }}"
-    {% endif %}
-    {% if include.title %}
-      title="{{ include.title }}"
-    {% endif %}
+    class="gg-audio-native"
+    data-src="{{ audio_src }}"
+    preload="none"
     {% if include.autoplay %}
       autoplay
-    {% endif %}
-    {% if include.controls %}
-      controls
     {% endif %}
     {% if include.loop %}
       loop
@@ -22,7 +15,25 @@
     {% if include.muted %}
       muted
     {% endif %}
-  />
+  ></audio>
+
+  <div class="gg-audio-main">
+    <button class="gg-audio-toggle" type="button" aria-label="Play {{ audio_title }}">
+      <i class="ti ti-player-play-filled" aria-hidden="true"></i>
+    </button>
+    <div class="gg-audio-meta">
+      <div class="gg-audio-title">{{ audio_title }}</div>
+      <div class="gg-audio-controls">
+        <input class="gg-audio-seek" type="range" min="0" max="1000" value="0" aria-label="Seek {{ audio_title }}">
+        <div class="gg-audio-time">
+          <span class="gg-audio-current">0:00</span>
+          <span>/</span>
+          <span class="gg-audio-duration">0:00</span>
+        </div>
+      </div>
+      <div class="gg-audio-status" aria-live="polite"></div>
+    </div>
+  </div>
 
   {% if include.caption %}
     <figcaption class="caption">{{ include.caption }}</figcaption>
