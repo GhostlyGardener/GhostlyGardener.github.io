@@ -1,7 +1,6 @@
 ---
 layout: page
-title: I Said So
-redirect: https://isaidso.cn
+title: isaidso.cn
 description: A public judgment-record platform for Chinese internet users, built around immutable predictions, verifiable timestamps, and shareable result cards.
 img: assets/img/projects/isaidso_preview-800.webp
 importance: 1

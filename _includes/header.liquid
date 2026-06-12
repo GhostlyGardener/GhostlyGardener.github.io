@@ -105,13 +105,13 @@
                 {% endif %}
                 {% if page.collection == 'projects' %}
                   {% if p.permalink == '/projects/' %}
-                    {% if page.category == 'Other Projects' or page.category == '其他项目' %}
+                    {% if page.category == 'Other Projects' or page.category == '其他项目' or page.category == 'Website' or page.category == '网站' %}
                       {% assign nav_active = false %}
                     {% else %}
                       {% assign nav_active = true %}
                     {% endif %}
                   {% elsif p.permalink == '/other-projects/' %}
-                    {% if page.category == 'Other Projects' or page.category == '其他项目' %}
+                    {% if page.category == 'Other Projects' or page.category == '其他项目' or page.category == 'Website' or page.category == '网站' %}
                       {% assign nav_active = true %}
                     {% else %}
                       {% assign nav_active = false %}
