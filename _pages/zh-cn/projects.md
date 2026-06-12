@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 项目
+title: 游戏项目
 permalink: /projects/
 description:
 nav: true
@@ -19,7 +19,7 @@ horizontal: false
   </a>
   {% if category == "复古游戏" %}
   <div>
-    这些经典游戏是采用 C++ 和 SDL3 库进行的重制。<br/>
+    这些经典游戏均使用 C++ 和 SDL3 从零重制。<br/>
   </div>
   <br/>
   <!-- -->

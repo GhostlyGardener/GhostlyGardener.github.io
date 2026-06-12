@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Game Projects
 permalink: /projects/
 description:
 nav: true
@@ -19,7 +19,7 @@ horizontal: false
   </a>
   {% if category == "Retro Games" %}
   <div>
-      These classic titles were remade from scratch using C++ and SDL3 library.<br/>
+      These classic titles were remade from scratch using C++ and the SDL3 library.<br/>
   </div>
   <br/>
   <!-- -->

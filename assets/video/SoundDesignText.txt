@@ -1,0 +1,11 @@
+Ambient - Imported 	+ Manipulated
+Ambient Wind - Recorded + Layered
+Jump - Recorded
+Dash - Imported + Manipulated + Layered
+Spring - Imported + Manipulated
+Strawberry Collect - Imported + Manipulated
+Strawberry Ambient - Imported + Manipulated
+Land on Concrete - Manipulated
+Land on Wood - Recorded + Manipulated + Layered
+Climb - Imported + Layered
+Climb Metal - Imported + Manipulated

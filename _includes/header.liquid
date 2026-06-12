@@ -99,7 +99,26 @@
                 </li>
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
-                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+                {% assign nav_active = false %}
+                {% if page.url contains parent_link %}
+                  {% assign nav_active = true %}
+                {% endif %}
+                {% if page.collection == 'projects' %}
+                  {% if p.permalink == '/projects/' %}
+                    {% if page.category == 'Other Projects' or page.category == '其他项目' %}
+                      {% assign nav_active = false %}
+                    {% else %}
+                      {% assign nav_active = true %}
+                    {% endif %}
+                  {% elsif p.permalink == '/other-projects/' %}
+                    {% if page.category == 'Other Projects' or page.category == '其他项目' %}
+                      {% assign nav_active = true %}
+                    {% else %}
+                      {% assign nav_active = false %}
+                    {% endif %}
+                  {% endif %}
+                {% endif %}
+                <li class="nav-item {% if nav_active %}active{% endif %}">
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
                   {%- elsif p.permalink contains '/blog/' -%}
@@ -109,7 +128,7 @@
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
                     {{- p.title }}
-                    {% if page.url contains p.url %}
+                    {% if nav_active %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
                   </a>
@@ -125,7 +144,7 @@
               {% else %}
                 {% assign other_language = site.languages.first %}
               {% endif %}
-              <li class="nav-item active">
+              <li class="nav-item language-toggle active">
                 {% if site.active_lang == site.default_lang %}
                   <a class="nav-link" {% static_href -%} href="{{ site.baseurl }}/{{ other_language }}{{ page.url }}" {%- endstatic_href %}>
                     {% if site.country_flag %}
@@ -145,7 +164,7 @@
                 {% endif %}
               </li>
             {% else %}
-              <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
+              <li class="nav-item language-toggle dropdown {% if page.title == p.title %}active{% endif %}">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"

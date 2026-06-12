@@ -33,7 +33,9 @@ I enjoy a wide range of games, especially ones with strong atmosphere, satisfyin
     ];
 
     const randomImage = images[Math.floor(Math.random() * images.length)];
-    const img = document.getElementById("profile-image");
+    const img =
+      document.getElementById("profile-image") ||
+      document.querySelector(".profile img");
 
     if (!img) return;
 
@@ -43,6 +45,8 @@ I enjoy a wide range of games, especially ones with strong atmosphere, satisfyin
     }
 
     img.src = randomImage;
+    img.removeAttribute("srcset");
+    img.removeAttribute("sizes");
     img.alt = randomImage.split("/").pop();
   });
 </script>

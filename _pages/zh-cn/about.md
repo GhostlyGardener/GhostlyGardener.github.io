@@ -35,14 +35,19 @@ social: false # includes social icons at the bottom of the page
     const randomImage = images[Math.floor(Math.random() * images.length)];
 
     const img =
-      document.querySelector(".profile img") ||
-      document.querySelector("img[alt='profile image']") ||
-      document.querySelector(".post img");
+      document.getElementById("profile-image") ||
+      document.querySelector(".profile img");
 
-    if (img) {
-      img.src = randomImage;
-    } else {
-      console.log("没有找到头像图片元素");
+    if (!img) return;
+
+    const picture = img.closest("picture");
+    if (picture) {
+      picture.querySelectorAll("source").forEach(source => source.remove());
     }
+
+    img.src = randomImage;
+    img.removeAttribute("srcset");
+    img.removeAttribute("sizes");
+    img.alt = randomImage.split("/").pop();
   });
 </script>
