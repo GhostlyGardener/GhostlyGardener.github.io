@@ -5,7 +5,7 @@ permalink: /other-projects/
 description:
 nav: true
 nav_order: 2
-display_categories: [Other Projects]
+display_categories: [Website]
 horizontal: false
 ---
 

@@ -2,9 +2,9 @@
 layout: page
 title: 我早说了
 description: 面向中文互联网用户的公开判断记录与存证平台，围绕不可篡改的预测、可验证时间戳和可分享结果卡片构建。
-img: assets/img/projects/isaidso_preview.svg
+img: assets/img/projects/isaidso_preview-800.webp
 importance: 1
-category: 其他项目
+category: 网站
 ---
 
 <b>项目简介</b><br/>
