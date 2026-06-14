@@ -17,3 +17,5 @@ category: 游戏音乐
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/hollow-garden.png" title="Hollow Garden 封面" class="img-fluid rounded z-depth-1" %}
+
+使用 Suno AI 辅助

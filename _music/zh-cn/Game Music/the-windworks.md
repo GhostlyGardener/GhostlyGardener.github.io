@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Windworks
-description: 一首由风轮、平台与机械结构驱动的主题。
+description: 风轮与机械结构驱动的主题。
 img: assets/img/music/the-windworks.png
 importance: 7
 category: 游戏音乐
@@ -17,3 +17,5 @@ category: 游戏音乐
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/the-windworks.png" title="The Windworks 封面" class="img-fluid rounded z-depth-1" %}
+
+使用 Suno AI 辅助

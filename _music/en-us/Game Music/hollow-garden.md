@@ -17,3 +17,5 @@ A castle stands quietly in the depth of night. Overgrown flowers creep along sto
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/hollow-garden.png" title="Hollow Garden cover" class="img-fluid rounded z-depth-1" %}
+
+Assisted with Suno AI.

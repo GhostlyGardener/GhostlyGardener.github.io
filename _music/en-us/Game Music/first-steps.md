@@ -17,3 +17,5 @@ A light, warm melody for the beginning of a journey. The track follows a small r
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/first-steps.png" title="First Steps cover" class="img-fluid rounded z-depth-1" %}
+
+Assisted with Suno AI.

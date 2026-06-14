@@ -393,10 +393,11 @@ kbd {
   }
 
   .card-body {
-    padding: 1rem 1rem 1.1rem;
+    padding: 1rem 1rem 1.05rem;
   }
 
   .card-title {
+    margin-top: 0;
     margin-bottom: 0.45rem;
     color: var(--global-text-color);
     font-size: 1.02rem;
@@ -409,6 +410,7 @@ kbd {
     color: var(--global-text-color-light);
     font-size: 0.92rem;
     line-height: 1.45;
+    margin-bottom: 0.25rem;
   }
 }
 

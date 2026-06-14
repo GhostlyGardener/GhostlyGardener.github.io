@@ -17,3 +17,5 @@ Aurora light drifts quietly beneath the night sky, while crystalline trees refra
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/crystalwood.png" title="Crystalwood cover" class="img-fluid rounded z-depth-1" %}
+
+Assisted with Suno AI.
