@@ -17,3 +17,5 @@ Countless lights brighten the vast space beneath the rock, casting warmth over i
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/beneath-a-thousand-lanterns.png" title="Beneath a Thousand Lanterns cover" class="img-fluid rounded z-depth-1" %}
+
+Assisted with Suno AI.

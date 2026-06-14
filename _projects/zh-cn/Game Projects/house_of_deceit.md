@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 骗子之家
+title: 骗子之家 (GGJ 2026)
 description: 一款围绕信任、选择与线索分支结局展开的悬疑叙事调查游戏。
 img: assets/img/games/house_of_deceit_preview.png
 importance: 5
@@ -40,7 +40,7 @@ category: 游戏项目
 ---
 
 <b>补充说明</b><br/>
-本作创作于 Global Game Jam。<br/>
+制作于 Global Game Jam 2026<br/>
 
 - 结局一：最后选择“留下”。  
 - 结局二：最后选择“离开”。  

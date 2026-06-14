@@ -17,3 +17,5 @@ Countless meteors drag long traces of light across the night sky, like a slow ti
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/the-starflood.png" title="The Starflood cover" class="img-fluid rounded z-depth-1" %}
+
+Assisted with Suno AI.

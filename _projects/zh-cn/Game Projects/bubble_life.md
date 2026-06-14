@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 泡泡人生
+title: 泡泡人生 (GGJ 2025)
 description: 一段短篇、富有氛围感的互动体验，围绕生命中稍纵即逝的瞬间展开。观察、互动，并跟随泡泡的引导感受情绪的流转。
 img: assets/img/games/bubble_life_preview.png
 importance: 4
@@ -26,7 +26,7 @@ category: 游戏项目
 ---
 
 <b>补充说明</b><br/>
-制作于 Global Game Jam<br/>
+制作于 Global Game Jam 2025<br/>
 注重于氛围表达、象征意义与短篇叙事体验的创作。<br/>
 
 ---

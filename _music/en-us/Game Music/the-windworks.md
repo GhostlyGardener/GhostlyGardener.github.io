@@ -17,3 +17,5 @@ Wind cuts through from above, driving layers of machinery in constant motion. Ma
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/the-windworks.png" title="The Windworks cover" class="img-fluid rounded z-depth-1" %}
+
+Assisted with Suno AI.

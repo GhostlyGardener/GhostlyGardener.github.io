@@ -1,6 +1,6 @@
 ---
 layout: page
-title: House of Deceit
+title: House of Deceit (GGJ 2026)
 description: A suspense-driven narrative investigation game built around trust, choice, and clue-based branching endings.
 img: assets/img/games/house_of_deceit_preview.png
 importance: 5
@@ -39,7 +39,7 @@ This game is played mostly with the mouse.<br/>
 ---
 
 <b>Notes</b><br/>
-Created during Global Game Jam<br/>
+Created during Global Game Jam 2026<br/>
 
 - Ending 1: Choose to stay at the end.
 - Ending 2: Choose to leave at the end.
@@ -52,5 +52,4 @@ Created during Global Game Jam<br/>
 Gameplay Programming<br/>
 
 ---
-
 

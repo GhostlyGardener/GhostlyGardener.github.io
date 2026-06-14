@@ -5,6 +5,7 @@ description: 一首安静的地下通道主题。
 img: assets/img/music/echoes-below.png
 importance: 4
 category: 游戏音乐
+hidden: true
 ---
 
 <b>简介</b><br/>
@@ -17,3 +18,5 @@ category: 游戏音乐
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/echoes-below.png" title="Echoes Below 封面" class="img-fluid rounded z-depth-1" %}
+
+使用 Suno AI 辅助

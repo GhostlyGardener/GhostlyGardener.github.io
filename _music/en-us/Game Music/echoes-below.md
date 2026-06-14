@@ -5,6 +5,7 @@ description: A calm underground passage theme with stone, shadow, and steady mot
 img: assets/img/music/echoes-below.png
 importance: 4
 category: Game Music
+hidden: true
 ---
 
 <b>Overview</b><br/>
@@ -17,3 +18,5 @@ Old stone passages cut through a wide underground space, stretching between cave
 ---
 
 {% include figure.liquid loading="eager" path="assets/img/music/echoes-below.png" title="Echoes Below cover" class="img-fluid rounded z-depth-1" %}
+
+Assisted with Suno AI.

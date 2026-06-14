@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bubble Life
+title: Bubble Life (GGJ 2025)
 description: A short, atmospheric interactive experience about fleeting moments in life.<br/>Observe, interact, and let the bubbles guide your emotions.
 img: assets/img/games/bubble_life_preview.png
 importance: 4
@@ -26,7 +26,7 @@ This game is played entirely with the mouse.<br/>
 ---
 
 <b>Notes | 说明</b><br/>
-Created during Global Game Jam<br/>
+Created during Global Game Jam 2025<br/>
 Focuses on mood, symbolism, and short-form storytelling.<br/>
 
 ---
