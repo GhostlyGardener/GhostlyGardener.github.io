@@ -5,6 +5,7 @@ description: 一首钢琴圆舞曲。
 img: assets/img/music/waltz.png
 importance: 5
 category: 小品与习作
+hidden: true
 ---
 
 <b>简介</b><br/>

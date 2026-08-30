@@ -5,6 +5,7 @@ description: 一首钢琴小品。
 img: assets/img/music/romance.png
 importance: 4
 category: 小品与习作
+hidden: true
 ---
 
 <b>简介</b><br/>

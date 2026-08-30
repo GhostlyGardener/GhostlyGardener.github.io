@@ -5,6 +5,7 @@ description: A short piano piece.
 img: assets/img/music/romance.png
 importance: 4
 category: "Sketches & Studies"
+hidden: true
 ---
 
 <b>Overview</b><br/>

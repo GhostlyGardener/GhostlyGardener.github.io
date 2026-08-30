@@ -5,6 +5,7 @@ description: A short piano waltz.
 img: assets/img/music/waltz.png
 importance: 5
 category: "Sketches & Studies"
+hidden: true
 ---
 
 <b>Overview</b><br/>
