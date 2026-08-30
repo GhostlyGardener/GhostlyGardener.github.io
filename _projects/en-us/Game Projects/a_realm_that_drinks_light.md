@@ -3,7 +3,7 @@ layout: page
 title: A Realm That Drinks Light
 description: A 2D side-scrolling exploration-puzzle game set in a colorless underground ruin, where players move forward through the remnants of a fallen world and piece together its past through light and color.
 img: assets/img/games/ygzd_preview.png
-importance: 3
+importance: 1
 category: Game Projects
 ---
 

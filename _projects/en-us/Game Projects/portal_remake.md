@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Portal Remake
+title: Portal Remake (TAC 380)
 description: A Portal-inspired 3D first-person puzzle game built in C++ with SDL3, focused on traversal, spatial reasoning, and systems-driven gameplay.
 img: assets/img/games/portal_preview.png
-importance: 1
+importance: 3
 category: Game Projects
 ---
 

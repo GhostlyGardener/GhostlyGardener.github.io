@@ -3,7 +3,7 @@ layout: page
 title: 饮光之地
 description: 一款 2D 横版探索解谜游戏，在失去色彩的地下废墟中前行，通过光与颜色拼凑出这个世界曾经发生的一切。
 img: assets/img/games/ygzd_preview.png
-importance: 3
+importance: 1
 category: 游戏项目
 ---
 

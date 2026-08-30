@@ -3,9 +3,9 @@ layout: page
 permalink: /music/
 title: Music
 nav: true
-nav_order: 3
+nav_order: 4
 description:
-display_categories: [Game Music, Sound Design]
+display_categories: [Game Music, AI-Assisted Experiments, "Music & Animation", Sound Design, "Sketches & Studies"]
 horizontal: false
 ---
 

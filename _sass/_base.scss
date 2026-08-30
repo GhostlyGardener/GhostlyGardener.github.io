@@ -539,6 +539,42 @@ footer.sticky-bottom {
       }
     }
   }
+
+  .table-cv-map {
+    display: table;
+    width: 100%;
+    overflow: visible;
+
+    td:last-child,
+    a {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .toc-sidebar-column {
+    display: none;
+  }
+
+  .cv {
+    .table-cv-map {
+      table-layout: fixed;
+
+      td:first-child {
+        width: 88px;
+      }
+    }
+
+    .date-column {
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%;
+      transform: none;
+      text-align: left !important;
+    }
+  }
 }
 
 .table-cv-map {

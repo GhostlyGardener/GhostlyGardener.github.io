@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 游戏项目
+title: 项目
 permalink: /projects/
 description:
 nav: true
 nav_order: 1
-display_categories: [游戏项目, 复古游戏]
+display_categories: [游戏项目, 其他项目, 复古游戏]
 horizontal: false
 ---
 

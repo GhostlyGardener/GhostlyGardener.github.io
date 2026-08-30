@@ -4,7 +4,7 @@ title: 《传送门》复刻
 description: 以《传送门》机制为核心的 3D 第一人称解谜游戏，聚焦于传送移动、空间思维与系统驱动的玩法设计。
 
 img: assets/img/games/portal_preview.png
-importance: 1
+importance: 3
 category: 游戏项目
 ---
 
