@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 3D Game Engine
+title: 3D Game Engine (TAC 485)
 description: A custom 3D game engine built in C++ and SDL3, developed as a sandbox for exploring real-time rendering, animation, runtime systems, and engine architecture.
-img: assets/img/engines/animation.gif
-importance: 2
+img: assets/img/engines/engine-cover.png
+importance: 6
 category: Game Projects
 ---
 

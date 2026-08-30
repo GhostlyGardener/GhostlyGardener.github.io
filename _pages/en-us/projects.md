@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Game Projects
+title: Projects
 permalink: /projects/
 description:
 nav: true
 nav_order: 1
-display_categories: [Game Projects, Retro Games]
+display_categories: [Game Projects, Other Projects, Retro Games]
 horizontal: false
 ---
 

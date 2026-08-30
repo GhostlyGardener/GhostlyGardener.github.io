@@ -4,7 +4,6 @@
     "image": "",
     "email": "thyoumu8848@gmail.com",
     "url": "https://GhostlyGardener.github.io",
-    "summary": "Computer science student at USC interested in the technical and creative side of interactive media.",
     "profiles": [
       {
         "network": "",
@@ -24,10 +23,27 @@
       "endDate": "05-2027"
     }
   ],
+  "work": [
+    {
+      "name": "NetEase Games, Minecraft: China Edition",
+      "position": "Game Development Engineer, Intern",
+      "location": "Shanghai, China",
+      "url": "/experience/netease-minecraft/",
+      "startDate": "07-2026",
+      "endDate": "08-2026",
+      "summary": "Python, Cocos Studio, LLM Tool Calling, RAG",
+      "highlights": [
+        "Built and validated an in-game AI agent by integrating general game-command execution and scenario-specific Minecraft ModSDK tools with LLM Tool Calling. Enabled players to use natural language to inspect character status, inventory, and surroundings; obtain items, summon entities, teleport, and compose multiple tools for compound tasks. Built a Wiki-based RAG pipeline to provide game knowledge and command syntax and parameters for the model's tool selection and task planning; fed server execution results back to the model to support multi-step tool calls and multi-turn conversations.",
+        "Implemented the client-side command interfaces for an in-game AI companion in collaboration with game designers and artists. Used Cocos Studio and Python to convert Figma designs into CSD layouts, UI assets, and interactions for single, batch, and chained commands, integrating them into the existing streaming chat UI and server execution flow. Extended the streaming message renderer to manage each command set as a render group containing multiple command cards and a batch-action card, handling card reuse, visibility, and dynamic layout within the group to prevent downstream content from shifting during incremental updates.",
+        "Diagnosed and fixed live client issues involving unresponsive touch handling in store reward popups and UI display problems, then completed in-game regression verification."
+      ]
+    }
+  ],
   "projects": [
     {
       "name": "Portal Remake",
-      "summary": "Game Programming | C++, SDL3, RapidJSON, SDL_Mixer",
+      "role": "Game Programming",
+      "summary": "C++, SDL3, RapidJSON, SDL_Mixer",
       "highlights": [
         "Built core gameplay systems for a Portal-inspired 3D first-person puzzle game in C++ using SDL3.",
         "Implemented portal placement and traversal using line-segment casting, quaternions, and matrix transformations, supporting teleportation, camera updates, and momentum remapping.",
@@ -40,7 +56,8 @@
     },
     {
       "name": "Custom 3D Game Engine",
-      "summary": "Engine Programming | C++, SDL3, HLSL",
+      "role": "Engine Programming",
+      "summary": "C++, SDL3, HLSL",
       "highlights": [
         "Built a modular 3D game engine in C++ and SDL3 with transforms, camera/projection matrices, depth buffering, textured rendering, materials, and Blinn-Phong lighting.",
         "Implemented a skeletal animation system with keyframe interpolation and animation playback.",
@@ -53,7 +70,8 @@
     },
     {
       "name": "Night Courier",
-      "summary": "Game Design & Development | C#, Unity",
+      "role": "Game Design & Development",
+      "summary": "C#, Unity, Cinemachine",
       "highlights": [
         "Designed and developed a 2D top-down stealth game where players scout enemy camps, infer troop direction and numbers from environmental clues, and relay warnings through beacon towers.",
         "Implemented core stealth systems including state-machine-based enemy AI, field-of-view and line-of-sight checks, last-known-position search, NavMesh-based pursuit, and player hiding mechanics.",
@@ -65,7 +83,8 @@
     },
     {
       "name": "A Realm That Drinks Light",
-      "summary": "Audio Design, Audio Systems Implementation | C#, Unity, Wwise",
+      "role": "Audio Design, Audio Systems Implementation",
+      "summary": "C#, Unity, Wwise",
       "highlights": [
         "Designed the game’s SFX palette, composed original background music, and led technical audio implementation for a 2D side-scrolling exploration-puzzle game in Unity using Wwise and C#.",
         "Built a dynamic environmental audio system using Wwise Events, Switches, and RTPCs, supporting distance-based ambient zones, interactive sound effects, and object-dependent loop control.",
@@ -91,40 +110,25 @@
       "url": "",
       "startDate": "08-2022",
       "highlights": [
-          "Established a community of over 150 members, focused on discussions and activities related to the Touhou Project and music.",
-          "Organized both offline and online events, including music ensemble sessions, board games, and music composition workshops.",
+          "Established a community of over 250 members, focused on discussions and activities related to the Touhou Project and music.",
+          "Organized both offline and online events, including music ensemble sessions, board games, and music composition workshops; performed at several large-scale events.",
           "2 years of teaching music theory and aural skills to community members."
       ]
     }
   ],
   "skills": [
     {
-      "name": "Computer Science",
+      "name": "Technical & AI",
       "icon": "fa-solid fa-star",
-      "keywords": ["C++ / C# / Python / Java", "x86-64 Assembly", "Version Control", "Software Design & Iteration", "Machine Learning"]
+      "keywords": ["C++ / C# / C / Python", "Unity / Unreal Engine", "OpenGL / HLSL", "Wwise", "Git / SVN", "CMake", "LLM Agent Development", "Tool Calling / ReAct", "RAG (Knowledge Bases / Retrieval)", "AI-assisted Development"]
     },
     {
-      "name": "Game Development",
+      "name": "Music & Other",
       "icon": "fa-solid fa-star",
-      "keywords": ["Unity", "Wwise Audio Middleware", "Unreal Engine", "3D Modeling Basics", "Playcentric Design & Prototyping"]
-    },
-    {
-      "name": "Music",
-      "icon": "fa-solid fa-star",
-      "keywords": ["Classical Guitar", "Music Composition", "Notation Softwares", "Digital Audio Workstations"]
-    },
-    {
-      "name": "Other",
-      "icon": "fa-solid fa-star",
-      "keywords": ["Communication", "Problem Solving", "Priority Management", "Leadership and Teamwork"]  
+      "keywords": ["Game Music Composition", "Sound Design", "Classical Guitar", "Music Theory & Aural Skills", "DAWs (FL Studio / Cubase)", "Notation Software (Sibelius / MuseScore)", "Maya", "Cocos Studio", "Adobe Premiere", "Figma"]
     }
   ],
   "interests": [
-    {
-      "name": "Work",
-      "icon": "fa-solid fa-star",
-      "keywords": ["Gameplay Programming", "Engine Programming", "Audio Design", "Audio Programming", "Game Design"]
-    },
     {
       "name": "Games",
       "icon": "fa-solid fa-star",
@@ -133,23 +137,13 @@
     {
       "name": "Music",
       "icon": "fa-solid fa-star",
-      "keywords": ["Shostakovich, Piano Trio No. 2", "Scriabin, Piano Concerto", "Piazzolla, Histoire du Tango", "Octopath Traveler OST"]
-    },
-    {
-      "name": "Other",
-      "icon": "fa-solid fa-star",
-      "keywords": ["Traveling", "Photography", "Reading", "Education"]
+      "keywords": ["Shostakovich, Piano Trio No. 2", "Scriabin, Piano Concerto", "Piazzolla, Histoire du Tango", "Octopath Traveler OST", "Clair Obscur: Expedition 33 OST"]
     }
   ],
   "languages": [
     {
       "language": "Chinese",
       "fluency": "Native Proficiency",
-      "icon": "fa-solid fa-star"
-    },
-    {
-      "language": "English",
-      "fluency": "Bilingual Proficiency",
       "icon": "fa-solid fa-star"
     },
     {

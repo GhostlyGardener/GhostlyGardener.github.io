@@ -145,6 +145,10 @@ collections:
     output: true
     # this is needed to avoid adding language here, like /:collection/:lang/:title/
     permalink: /:collection/:title/
+  experience:
+    output: true
+    # this is needed to avoid adding language here, like /:collection/:lang/:title/
+    permalink: /:collection/:title/
   music:
     output: true
     # this is needed to avoid adding language here, like /:collection/:lang/:title/
@@ -186,6 +190,7 @@ exclude:
   - INSTALL.pt-br.md
   - LICENSE
   - lighthouse_results/
+  - nginx.local.conf
   - package.json
   - package-lock.json
   - _pages/en-us/about_einstein.md
@@ -645,15 +650,10 @@ jekyll_get_json:
 
 jsonresume:
   - basics
-  - work
   - education
-  - publications
+  - work
   - projects
   - involvement
-  - volunteer
-  - awards
-  - certificates
   - skills
-  - languages
   - interests
-  - references
+  - languages

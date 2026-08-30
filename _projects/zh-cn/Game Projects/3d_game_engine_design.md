@@ -2,8 +2,8 @@
 layout: page
 title: 3D 游戏引擎
 description: 一个基于 C++ 和 SDL3 实现的 3D 游戏引擎，用于探索实时渲染、动画系统与引擎架构。
-img: assets/img/engines/animation.gif
-importance: 2
+img: assets/img/engines/engine-cover.png
+importance: 6
 category: 游戏项目
 ---
 

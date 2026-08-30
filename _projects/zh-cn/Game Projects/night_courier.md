@@ -3,7 +3,7 @@ layout: page
 title: 夜不收
 description: 一款 2D 俯视角潜行游戏，在敌营中侦察与观察，通过线索判断情报并完成传递。
 img: assets/img/games/night_courier_preview.png
-importance: 6
+importance: 2
 category: 游戏项目
 ---
 

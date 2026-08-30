@@ -3,7 +3,7 @@ layout: page
 title: Night Courier
 description: A 2D top-down stealth game about scouting enemy camps, reading environmental clues, and relaying warnings under pressure.
 img: assets/img/games/night_courier_preview.png
-importance: 6
+importance: 2
 category: Game Projects
 ---
 
@@ -23,4 +23,3 @@ This is a 2D top-down stealth game set in Liaodong in 1619, on the eve of the Ba
 Game Design<br/>
 Gameplay Programming<br/>
 Audio Design<br/><br/>
-
