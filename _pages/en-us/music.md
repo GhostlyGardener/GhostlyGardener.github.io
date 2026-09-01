@@ -5,7 +5,7 @@ title: Music
 nav: true
 nav_order: 4
 description:
-display_categories: [Game Music, AI-Assisted Experiments, "Music & Animation", Sound Design, "Sketches & Studies"]
+display_categories: [Game Music, AI-Assisted Experiments, Sound Design, "Sketches & Studies"]
 horizontal: false
 ---
 
