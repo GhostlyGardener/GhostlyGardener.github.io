@@ -5,7 +5,7 @@ title: 音乐
 nav: true
 nav_order: 4
 description:
-display_categories: [游戏音乐, AI 辅助创作实验, 音乐与动画, 声音设计, 小品与习作]
+display_categories: [游戏音乐, AI 辅助创作实验, 声音设计, 小品与习作]
 horizontal: false
 ---
 

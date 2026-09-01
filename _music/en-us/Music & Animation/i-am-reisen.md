@@ -5,6 +5,7 @@ description: An impressionistic music video inspired by Reisen, a character from
 img: assets/img/music/i-am-reisen.png
 importance: 1
 category: "Music & Animation"
+hidden: true
 ---
 
 <b>Video</b><br/>

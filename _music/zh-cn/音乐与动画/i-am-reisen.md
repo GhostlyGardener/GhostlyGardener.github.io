@@ -5,6 +5,7 @@ description: 一支以东方 Project 角色铃仙为主题、取材于幻想乡�
 img: assets/img/music/i-am-reisen.png
 importance: 1
 category: 音乐与动画
+hidden: true
 ---
 
 <b>影像</b><br/>
