@@ -244,20 +244,14 @@
   </header>
 
   <article>
-    <p><b>项目概述</b><br>
-该项目是一个基于 C++ 和 SDL3 开发的 3D 游戏引擎。<br><br></p>
+    <h2 id="项目概述">项目概述</h2>
 
-<p>项目最初的目标是通过实践理解引擎层各个系统的协作方式，包括场景组织与管理、模型与纹理的加载与复用、着色器与光照对画面表现的影响，以及动画、碰撞和性能分析等系统对交互与运行时表现的支撑。<br><br></p>
+<p>这是一个使用 C++ 与 SDL3 构建的自研 3D 游戏引擎。我通过它实践实时渲染、资源加载、动画、碰撞、多线程、性能分析与玩法系统在同一运行时中的协作方式。下面按照开发阶段，从最初的渲染管线一直展示到最终的 Q*bert 项目。</p>
 
-<p>随着开发推进，这个引擎逐步扩展出图形渲染、游戏支持系统和开发工具链等模块。下面的开发记录展示了这一过程：从基础渲染开始，逐步发展到光照、骨骼动画、后处理效果、碰撞检测、多线程任务系统以及性能分析工具。<br><br></p>
+<h2 id="1-渲染基础">1. 渲染基础</h2>
 
-<p>这些系统共同构成了一个轻量且具备扩展性的引擎框架，可用于构建和测试交互式 3D 应用。<br><br></p>
-
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -273,34 +267,30 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/triangle-480.webp 480w,/assets/img/engines/triangle-800.webp 800w,/assets/img/engines/triangle-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/triangle.png" width="100%" height="auto" title="triangle img" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/triangle.png" width="100%" height="auto" title="引擎绘制的第一个三角形" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>三角形</b><br>
-       </center>
-        - 搭建基础渲染流程，包括顶点缓冲与着色器<br>
-        - 封装简单图形绘制的辅助类<br>
-    </div>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>三角形</h4>
+<ul>
+<li>使用顶点缓冲与着色器搭建基础渲染管线</li>
+<li>封装简单几何体的绘制辅助类</li>
+</ul>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>立方体</b><br>
-        </center>
-        - 实现基于顶点与索引缓冲的网格渲染<br>
-        - 添加物体变换与相机系统<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>网格渲染与相机</h4>
+<ul>
+<li>使用顶点与索引缓冲实现网格渲染</li>
+<li>添加物体变换与相机系统</li>
+</ul>
+</div>
+  <div class="col-md-6 mt-3">
 
 
 
@@ -316,20 +306,16 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/cube-480.webp 480w,/assets/img/engines/cube-800.webp 800w,/assets/img/engines/cube-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/cube.gif" width="100%" height="auto" title="cube gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/cube.gif" width="100%" height="auto" title="索引立方体渲染与相机移动" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -345,36 +331,32 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/texture-480.webp 480w,/assets/img/engines/texture-800.webp 800w,/assets/img/engines/texture-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/texture.gif" width="100%" height="auto" title="texture gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/texture.gif" width="100%" height="auto" title="深度测试与纹理网格" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>纹理</b><br>
-        </center>
-        - 引入 z-buffer，实现正确的深度测试<br>
-        - 为网格添加 UV 坐标支持纹理映射<br>
-        - 将纹理数据传入着色器进行采样<br>
-    </div>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>深度与纹理</h4>
+<ul>
+<li>引入 z-buffer，实现正确的深度测试</li>
+<li>添加 UV 坐标并在着色器中采样纹理</li>
+</ul>
+</div>
 </div>
 
-<hr>
+<h2 id="2-光照与场景架构">2. 光照与场景架构</h2>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>光照</b><br>
-        </center>
-        - 添加 Material 类用于描述表面属性<br>
-        - 构建点光源系统<br>
-        - 实现基于 Phong 模型的光照着色器<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>材质与 Phong 光照</h4>
+<ul>
+<li>添加材质系统与点光源</li>
+<li>构建结合光照、材质和纹理的 Phong 着色器</li>
+</ul>
+</div>
+  <div class="col-md-6 mt-3">
 
 
 
@@ -390,20 +372,16 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/lighting-480.webp 480w,/assets/img/engines/lighting-800.webp 800w,/assets/img/engines/lighting-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/lighting.gif" width="100%" height="auto" title="lighting gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/lighting.gif" width="100%" height="auto" title="Phong 光照与材质属性" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -419,36 +397,31 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/lambert-480.webp 480w,/assets/img/engines/lambert-800.webp 800w,/assets/img/engines/lambert-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/lambert.png" width="100%" height="auto" title="lambert shader img" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/lambert.png" width="100%" height="auto" title="Lambert、Half-Lambert 与边缘光着色器" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Lambert / Rim / Half-Lambert 着色</b><br>
-        </center>
-        - 实现 Lambert 漫反射光照模型<br>
-        - 扩展为 Half-Lambert，使光照过渡更柔和<br>
-        - 添加 Rim Light（边缘光）增强轮廓表现<br>
-    </div>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>期中着色器</h4>
+<ul>
+<li>实现 Lambert 漫反射</li>
+<li>扩展 Half-Lambert，使明暗过渡更柔和</li>
+<li>添加边缘光以增强物体轮廓</li>
+</ul>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>模型与资源管理</b><br>
-        </center>
-        - 构建资源管理器，实现资源复用<br>
-        - 支持基于 JSON 的场景加载<br>
-        - 引入组件系统以支持灵活的对象行为扩展<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>模型、资源与关卡</h4>
+<ul>
+<li>构建资源管理器，实现已加载资源的复用</li>
+<li>实现 JSON 关卡加载与基于组件的场景对象</li>
+</ul>
+</div>
+  <div class="col-md-6 mt-3">
 
 
 
@@ -464,20 +437,18 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/models-480.webp 480w,/assets/img/engines/models-800.webp 800w,/assets/img/engines/models-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/models.png" width="100%" height="auto" title="models img" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/models.png" width="100%" height="auto" title="加载的模型与场景对象" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
+<h2 id="3-动画与物理">3. 动画与物理</h2>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -493,36 +464,31 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/animation-480.webp 480w,/assets/img/engines/animation-800.webp 800w,/assets/img/engines/animation-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/animation.gif" width="100%" height="auto" title="animation gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/animation.gif" width="100%" height="auto" title="骨骼动画与蒙皮" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>动画系统</b><br>
-        </center>
-        - 实现 Skeleton 与 BoneTransform 数据结构<br>
-        - 构建动画类控制骨骼随时间变化<br>
-        - 实现蒙皮（skinning）着色器用于角色动画<br>
-    </div>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>骨骼动画</h4>
+<ul>
+<li>实现 Skeleton、BoneTransform 与 Animation 类</li>
+<li>添加用于动画模型的蒙皮着色器</li>
+</ul>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>碰撞系统</b><br>
-       </center>
-        - 实现 Physics 类，支持 AABB 与线段检测<br>
-        - 编写单元测试验证碰撞逻辑正确性<br>
-        - 为角色添加碰撞组件，实现站立与掉落行为<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>碰撞系统</h4>
+<ul>
+<li>实现 AABB 与线段检测</li>
+<li>为相交检测编写单元测试</li>
+<li>整合平台碰撞与角色掉落行为</li>
+</ul>
+</div>
+  <div class="col-md-6 mt-3">
 
 
 
@@ -538,20 +504,22 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/collision-480.webp 480w,/assets/img/engines/collision-800.webp 800w,/assets/img/engines/collision-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/collision.gif" width="100%" height="auto" title="collision gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/collision.gif" width="100%" height="auto" title="角色碰撞与平台移动" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
+<h2 id="4-性能与渲染完善">4. 性能与渲染完善</h2>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<h3 id="任务系统与性能分析">任务系统与性能分析</h3>
+
+<p>我实现了计时器与性能分析工具，将追踪数据导出为 JSON，并构建了带多线程工作线程的任务管理器。下面分别展示启动资源加载与并行动画更新。</p>
+
+<div class="row mb-4"><div class="col-12 mt-3">
+  
 
 
 
@@ -564,41 +532,53 @@
     -->
     
       
-        <source class="responsive-img-srcset" srcset="/assets/img/engines/jobs-480.webp 480w,/assets/img/engines/jobs-800.webp 800w,/assets/img/engines/jobs-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+        <source class="responsive-img-srcset" srcset="/assets/img/engines/jobs_loading-480.webp 480w,/assets/img/engines/jobs_loading-800.webp 800w,/assets/img/engines/jobs_loading-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/jobs.gif" width="100%" height="auto" title="jobs gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/jobs_loading.png" width="100%" height="auto" title="包含着色器、网格、纹理与关卡加载事件的启动性能记录" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>任务系统与性能分析</b><br>
-        </center>
-        - 实现计时器与性能分析工具（Profiler）<br>
-        - 将运行数据输出为 txt 与 json 文件<br>
-        - 构建多线程任务系统（Job System）<br>
-        - 使用 Chrome Tracing 可视化性能数据<br>
-    </div>
+  <p class="text-center text-muted"><small>启动阶段：着色器编译以及关卡、网格和纹理加载。</small></p>
+</div></div>
+
+<div class="row mb-5"><div class="col-12 mt-3">
+  
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/engines/jobs_animation-480.webp 480w,/assets/img/engines/jobs_animation-800.webp 800w,/assets/img/engines/jobs_animation-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/engines/jobs_animation.png" width="100%" height="auto" title="并行动画任务与主线程同步" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+  <p class="text-center text-muted"><small>运行阶段：动画任务分配至多个工作线程，并在主线程继续渲染前完成同步。</small></p>
+</div></div>
+
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>法线贴图</h4>
+<ul>
+<li>扩展输入布局以支持切线数据</li>
+<li>加入法线贴图支持与对应着色器</li>
+</ul>
 </div>
-
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>法线贴图</b><br>
-       </center>
-        - 在渲染流程中加入法线贴图支持<br>
-        - 扩展输入布局以包含切线（tangent）数据<br>
-        - 实现法线贴图着色器<br>
-        - 通过旋转物体验证效果正确性<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+  <div class="col-md-6 mt-3">
 
 
 
@@ -614,20 +594,16 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/normals-480.webp 480w,/assets/img/engines/normals-800.webp 800w,/assets/img/engines/normals-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/normals.gif" width="100%" height="auto" title="normal maps gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/normals.gif" width="100%" height="auto" title="移动光源下的法线贴图效果" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -643,33 +619,68 @@
         <source class="responsive-img-srcset" srcset="/assets/img/engines/bloom-480.webp 480w,/assets/img/engines/bloom-800.webp 800w,/assets/img/engines/bloom-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/bloom.gif" width="100%" height="auto" title="bloom gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/bloom.gif" width="100%" height="auto" title="实时 Bloom 后处理" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>Bloom 后处理</h4>
+<ul>
+<li>将场景渲染至离屏目标</li>
+<li>提取高亮区域并使用多分辨率高斯模糊</li>
+<li>每帧将 Bloom 结果混合回原始画面</li>
+</ul>
+</div>
+</div>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>后处理</b><br>
-        </center>
-        - 使用离屏渲染目标保存场景为纹理<br>
-        - 实现 Bloom 着色器提取高亮区域<br>
-        - 使用多分辨率缓冲进行双通道高斯模糊<br>
-        - 将 Bloom 结果与原始画面进行混合<br>
-    </div>
+<h2 id="5-最终整合qbert">5. 最终整合：Q*bert</h2>
+
+<div class="row align-items-center mb-5">
+  <div class="col-lg-5 mt-3">
+<p>期末项目将引擎的各项系统整合为一个完整的网格移动街机游戏。</p>
+<ul>
+<li>四方向跳跃与方块状态变化</li>
+<li>移动障碍、敌人行为以及胜负状态</li>
+<li>整合关卡加载、动画、碰撞、摄像机、光照与玩法系统</li>
+</ul>
+</div>
+  <div class="col-lg-7 mt-3">
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/engines/qbert_final-480.webp 480w,/assets/img/engines/qbert_final-800.webp 800w,/assets/img/engines/qbert_final-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/engines/qbert_final.gif" width="100%" height="auto" title="Q*bert 期末项目实机演示" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+</div>
 </div>
 
 <hr>
 
-<p><b>我的工作内容</b><br>
-实时渲染系统与 HLSL 着色器开发<br>
-动画与碰撞系统实现<br>
-场景与资源管理系统设计<br>
-多线程任务系统与性能分析工具开发<br>
-使用 Visual Studio 进行图形调试<br>
-应用线性代数与向量数学于实时系统<br></p>
+<h2 id="我的工作内容">我的工作内容</h2>
+
+<ul>
+  <li>实时渲染系统与 HLSL 着色器管线</li>
+  <li>场景、资源、动画、碰撞与玩法系统</li>
+  <li>多线程任务执行与性能分析流程</li>
+  <li>使用 Visual Studio 与 Chrome Tracing 进行图形和性能调试</li>
+  <li>应用于实时系统的线性代数与向量数学</li>
+</ul>
 
   </article>
 

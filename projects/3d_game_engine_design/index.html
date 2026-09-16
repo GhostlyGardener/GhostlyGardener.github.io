@@ -25,7 +25,7 @@
   
 </title>
 <meta name="author" content="Ghostly Gardener">
-<meta name="description" content="A custom 3D game engine built in C++ and SDL3, developed as a sandbox for exploring real-time rendering, animation, runtime systems, and engine architecture.">
+<meta name="description" content="A custom 3D game engine built in C++ and SDL3, developed to explore rendering, animation, runtime systems, and engine architecture.">
 
   <meta name="keywords" content="game development, gameplay programming, portfolio, interactive media">
 
@@ -242,24 +242,18 @@
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">3D Game Engine (TAC 485)</h1>
-    <p class="post-description">A custom 3D game engine built in C++ and SDL3, developed as a sandbox for exploring real-time rendering, animation, runtime systems, and engine architecture.</p>
+    <p class="post-description">A custom 3D game engine built in C++ and SDL3, developed to explore rendering, animation, runtime systems, and engine architecture.</p>
   </header>
 
   <article>
-    <p><b>Overview</b><br>
-This project is a custom 3D game engine built in C++ and SDL3. Rather than focusing on a single game, it was developed as a technical sandbox for exploring how core real-time systems work together inside a unified runtime framework.<br><br></p>
+    <h2 id="overview">Overview</h2>
 
-<p>The project began as an effort to better understand engine-level architecture through practice: how scenes are built and organized, how models and textures are loaded and reused, how shaders and lighting affect the final image, how animation and collision support interactivity, and how performance can be tracked during development.<br><br></p>
+<p>This is a custom 3D game engine built in C++ and SDL3. I used it to explore how rendering, asset loading, animation, collision, multithreading, profiling, and gameplay systems fit together inside one runtime. The stages below follow the engine from its first rendering pipeline through the final Q*bert project.</p>
 
-<p>As the engine evolved, it became a space for implementing and testing a wide range of features across graphics, gameplay support, and tooling. The development log below documents that process, from early rendering foundations to more advanced work such as lighting, skeletal animation, post-processing, collision, multithreaded jobs, and profiling workflows.<br><br></p>
+<h2 id="1-rendering-foundations">1. Rendering Foundations</h2>
 
-<p>Together, these systems form a lightweight but extensible engine framework for building and testing interactive 3D applications.<br><br></p>
-
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -275,34 +269,30 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/triangle-480.webp 480w,/assets/img/engines/triangle-800.webp 800w,/assets/img/engines/triangle-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/triangle.png" width="100%" height="auto" title="triangle img" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/triangle.png" width="100%" height="auto" title="first triangle rendered by the engine" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Triangle</b><br>
-       </center>
-        - Created a basic rendering pipeline with vertex buffers and shaders<br>
-        - Made helper classes for drawing simple objects<br>
-    </div>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>Triangle</h4>
+<ul>
+<li>Created the initial pipeline with vertex buffers and shaders</li>
+<li>Built helpers for drawing simple geometry</li>
+</ul>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Cube</b><br>
-        </center>
-        - Built mesh rendering with vertex and index buffers<br>
-        - Added object transforms and a camera system<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>Mesh Rendering and Camera</h4>
+<ul>
+<li>Built indexed mesh rendering</li>
+<li>Added object transforms and a camera system</li>
+</ul>
+</div>
+  <div class="col-md-6 mt-3">
 
 
 
@@ -318,20 +308,16 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/cube-480.webp 480w,/assets/img/engines/cube-800.webp 800w,/assets/img/engines/cube-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/cube.gif" width="100%" height="auto" title="cube gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/cube.gif" width="100%" height="auto" title="indexed cube rendering and camera movement" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -347,36 +333,32 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/texture-480.webp 480w,/assets/img/engines/texture-800.webp 800w,/assets/img/engines/texture-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/texture.gif" width="100%" height="auto" title="texture gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/texture.gif" width="100%" height="auto" title="depth testing and textured meshes" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Texture</b><br>
-        </center>
-        - Added a z-buffer so objects could render with correct depth<br>
-        - Added UV coordinates for textured meshes<br>
-        - Passed texture data into the shader<br>
-    </div>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>Depth and Textures</h4>
+<ul>
+<li>Added a z-buffer for correct depth testing</li>
+<li>Added UV coordinates and texture sampling in the shader</li>
+</ul>
+</div>
 </div>
 
-<hr>
+<h2 id="2-lighting-and-scene-architecture">2. Lighting and Scene Architecture</h2>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Lighting</b><br>
-        </center>
-        - Added a Material class to store surface properties<br>
-        - Built a point light system for the scene<br>
-        - Created a Phong shader using light, material, and texture data<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>Materials and Phong Lighting</h4>
+<ul>
+<li>Added a material system and point lights</li>
+<li>Built a Phong shader using light, material, and texture data</li>
+</ul>
+</div>
+  <div class="col-md-6 mt-3">
 
 
 
@@ -392,20 +374,16 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/lighting-480.webp 480w,/assets/img/engines/lighting-800.webp 800w,/assets/img/engines/lighting-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/lighting.gif" width="100%" height="auto" title="lighting gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/lighting.gif" width="100%" height="auto" title="Phong lighting and material properties" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -421,36 +399,31 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/lambert-480.webp 480w,/assets/img/engines/lambert-800.webp 800w,/assets/img/engines/lambert-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/lambert.png" width="100%" height="auto" title="lambert shader img" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/lambert.png" width="100%" height="auto" title="Lambert, Half-Lambert, and rim-light shaders" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Lambert / Rim / Half Lambert Shaders</b><br>
-        </center>
-        - Implemented a Lambert shader for diffuse lighting<br>
-        - Modified it into a Half-Lambert shader for softer light falloff<br>
-        - Added a rim light effect to make the silhouette stand out more<br>
-    </div>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>Midterm Shaders</h4>
+<ul>
+<li>Implemented Lambert diffuse lighting</li>
+<li>Extended it into Half-Lambert for softer transitions</li>
+<li>Added rim lighting to emphasize silhouettes</li>
+</ul>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Models</b><br>
-        </center>
-        - Built an asset manager to reuse loaded assets<br>
-        - Implemented JSON level loading for scene objects<br>
-        - Added components to scene objects for different behaviors<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>Models, Assets, and Levels</h4>
+<ul>
+<li>Built an asset manager to reuse loaded resources</li>
+<li>Implemented JSON level loading and component-based scene objects</li>
+</ul>
+</div>
+  <div class="col-md-6 mt-3">
 
 
 
@@ -466,20 +439,18 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/models-480.webp 480w,/assets/img/engines/models-800.webp 800w,/assets/img/engines/models-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/models.png" width="100%" height="auto" title="models img" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/models.png" width="100%" height="auto" title="loaded models and scene objects" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
+<h2 id="3-animation-and-physics">3. Animation and Physics</h2>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -495,36 +466,31 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/animation-480.webp 480w,/assets/img/engines/animation-800.webp 800w,/assets/img/engines/animation-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/animation.gif" width="100%" height="auto" title="animation gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/animation.gif" width="100%" height="auto" title="skeletal animation and skinning" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Animation</b><br>
-        </center>
-        - Implemented Skeleton and BoneTransform classes<br>
-        - Built an Animation class to control bone movement over time<br>
-        - Added a skinned shader for animated models<br>
-    </div>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>Skeletal Animation</h4>
+<ul>
+<li>Implemented Skeleton, BoneTransform, and Animation classes</li>
+<li>Added a skinned shader for animated models</li>
+</ul>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Collision</b><br>
-       </center>
-        - Implemented a Physics class with AABBs and LineSegments<br>
-        - Built unit tests for AABB-AABB and AABB-LineSegment intersection<br>
-        - Added collision to the player so it could stand on platforms and fall properly<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>Collision</h4>
+<ul>
+<li>Implemented AABBs and line segments</li>
+<li>Added unit tests for intersection checks</li>
+<li>Integrated platform collision and falling behavior</li>
+</ul>
+</div>
+  <div class="col-md-6 mt-3">
 
 
 
@@ -540,20 +506,22 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/collision-480.webp 480w,/assets/img/engines/collision-800.webp 800w,/assets/img/engines/collision-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/collision.gif" width="100%" height="auto" title="collision gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/collision.gif" width="100%" height="auto" title="player collision and platform movement" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
+<h2 id="4-performance-and-rendering-polish">4. Performance and Rendering Polish</h2>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<h3 id="job-system-and-profiling">Job System and Profiling</h3>
+
+<p>I added timers and a profiler that export trace data to JSON, then implemented a job manager with multithreaded workers. These traces show startup resource loading and parallel animation updates.</p>
+
+<div class="row mb-4"><div class="col-12 mt-3">
+  
 
 
 
@@ -566,41 +534,53 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
     -->
     
       
-        <source class="responsive-img-srcset" srcset="/assets/img/engines/jobs-480.webp 480w,/assets/img/engines/jobs-800.webp 800w,/assets/img/engines/jobs-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+        <source class="responsive-img-srcset" srcset="/assets/img/engines/jobs_loading-480.webp 480w,/assets/img/engines/jobs_loading-800.webp 800w,/assets/img/engines/jobs_loading-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/jobs.gif" width="100%" height="auto" title="jobs gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/jobs_loading.png" width="100%" height="auto" title="startup profile showing shader, mesh, texture, and level loading" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Jobs</b><br>
-        </center>
-        - Added a profiler and timer to track function run time<br>
-        - Saved timing data to txt and json files<br>
-        - Implemented a job manager with multithreaded workers<br>
-        - Used Chrome Tracing to visualize the recorded data<br>
-    </div>
+  <p class="text-center text-muted"><small>Startup: shader compilation and level, mesh, and texture loading.</small></p>
+</div></div>
+
+<div class="row mb-5"><div class="col-12 mt-3">
+  
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/engines/jobs_animation-480.webp 480w,/assets/img/engines/jobs_animation-800.webp 800w,/assets/img/engines/jobs_animation-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/engines/jobs_animation.png" width="100%" height="auto" title="parallel animation jobs and main-thread synchronization" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+  <p class="text-center text-muted"><small>Runtime: animation jobs distributed across workers before main-thread synchronization.</small></p>
+</div></div>
+
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
+<h4>Normal Mapping</h4>
+<ul>
+<li>Extended the input layout with tangent data</li>
+<li>Added normal-map support and a dedicated shader</li>
+</ul>
 </div>
-
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Normal Maps</b><br>
-       </center>
-        - Added support for normal maps in the rendering pipeline<br>
-        - Extended the input layout to include tangent data<br>
-        - Implemented a normal map shader<br>
-        - Used rotating objects to check that the effect was working correctly<br>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
+  <div class="col-md-6 mt-3">
 
 
 
@@ -616,20 +596,16 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/normals-480.webp 480w,/assets/img/engines/normals-800.webp 800w,/assets/img/engines/normals-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/normals.gif" width="100%" height="auto" title="normal maps gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/normals.gif" width="100%" height="auto" title="normal mapping under a moving light" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
-
-    </div>
+</div>
 </div>
 
-<hr>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
+<div class="row align-items-center mb-5">
+  <div class="col-md-6 mt-3">
 
 
 
@@ -645,38 +621,67 @@ This project is a custom 3D game engine built in C++ and SDL3. Rather than focus
         <source class="responsive-img-srcset" srcset="/assets/img/engines/bloom-480.webp 480w,/assets/img/engines/bloom-800.webp 800w,/assets/img/engines/bloom-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
       
     
-    <img src="/assets/img/engines/bloom.gif" width="100%" height="auto" title="bloom gif" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/engines/bloom.gif" width="100%" height="auto" title="real-time bloom post-processing" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
+</div>
+  <div class="col-md-6 mt-3">
+<h4>Post Processing: Bloom</h4>
+<ul>
+<li>Rendered the scene to an off-screen target</li>
+<li>Extracted bright areas and applied multi-resolution Gaussian blur</li>
+<li>Blended the result back into the scene every frame</li>
+</ul>
+</div>
+</div>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <center>
-            <b>Post Processing (Bloom)</b><br>
-        </center>
-        - Created an off-screen render target to store the scene as a texture<br>
-        - Built a bloom shader to isolate bright areas<br>
-        - Added half- and quarter-resolution buffers for a two-pass Gaussian blur<br>
-        - Blended the bloom result back onto the original scene<br>
-    </div>
+<h2 id="5-final-integration-qbert">5. Final Integration: Q*bert</h2>
+
+<div class="row align-items-center mb-5">
+  <div class="col-lg-5 mt-3">
+<p>The final project brought the engine systems together in a complete grid-based arcade game.</p>
+<ul>
+<li>Four-direction jumping and cube-state changes</li>
+<li>Moving hazards, enemy behavior, and win/lose states</li>
+<li>Level loading, animation, collision, camera, lighting, and gameplay in one project</li>
+</ul>
+</div>
+  <div class="col-lg-7 mt-3">
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/engines/qbert_final-480.webp 480w,/assets/img/engines/qbert_final-800.webp 800w,/assets/img/engines/qbert_final-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      
+    
+    <img src="/assets/img/engines/qbert_final.gif" width="100%" height="auto" title="Q*bert final project gameplay" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+</div>
 </div>
 
 <hr>
 
-<p><b>What I Worked On</b><br></p>
+<h2 id="what-i-worked-on">What I Worked On</h2>
+
 <ul>
-  <li>Designing and implementing real-time rendering systems and shader pipelines (HLSL)<br>
-</li>
-  <li>Building animation, collision, and scene management systems<br>
-</li>
-  <li>Developing multithreaded job systems and profiling workflows<br>
-</li>
-  <li>Debugging graphics and performance issues using Visual Studio and Chrome Tracing<br>
-</li>
-  <li>Applying linear algebra and vector math to real-time systems<br>
-</li>
+  <li>Real-time rendering systems and HLSL shader pipelines</li>
+  <li>Scene, asset, animation, collision, and gameplay systems</li>
+  <li>Multithreaded job execution and profiling workflows</li>
+  <li>Graphics and performance debugging with Visual Studio and Chrome Tracing</li>
+  <li>Linear algebra and vector math for real-time systems</li>
 </ul>
 
   </article>
